@@ -1,0 +1,74 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  @font-face {
+    font-family: Lemon;
+    src: url(/fonts/RobotoSlab-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: Irish;
+    src: url(/fonts/IrishGrover-Regular.ttf);
+  }
+  
+  .faqBackground {
+    background-position: center;
+    background-size: cover;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.4) 100%
+      ),
+      url("/img/faq.png");
+  }
+
+  .dark {
+    box-shadow: 0 -30px 40px  #fffefc inset;
+  }
+
+  .darks {
+    box-shadow: 0 40px 40px   inset;
+  }
+
+  .hero-text {
+    font-size: 111px;
+    letter-spacing: 0.3rem;
+  }
+
+  input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  input:focus-visible{
+    outline: none;
+    border-radius: 30px;
+  }
+}
+
+input[type="number"]:not([step="any"])::-webkit-inner-spin-button,
+input[type="number"]:not([step="any"])::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+.styles_scroll-to-top__2A70v {
+  background: transparent!important;
+}
